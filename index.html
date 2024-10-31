@@ -42,6 +42,7 @@
 							"ri-light-green": "#d4f6ae",
 							"ri-grey": "#f4f4f4",
 							"ri-grey-4": "#737373",
+							"ri-grey-5": "#494949",
 							"ri-grey-dark": "#494949",
 						},
 					},
@@ -132,7 +133,7 @@
 
 			<!-- ------------------------------- banner -------------------------------- -->
 			<section
-				class="flex flex-col items-center justify-center w-11/12 py-24 mx-auto text-center max-w-screen-2xl"
+				class="flex flex-col items-center justify-center w-11/12 py-8 mx-auto text-center lg:py-12 max-w-screen-2xl"
 			>
 				<picture>
 					<img
@@ -146,9 +147,10 @@
 					A barn house of this design has a striking appearance
 				</h1>
 				<p class="max-w-3xl mx-auto my-6 text-ri-grey-4">
-					The barn house captivates with its blend of rustic charm and modern
-					sophistication, featuring weathered wood, sleek metal accents, and
-					large windows that flood the space with natural light.
+					Combining the warmth of traditional woodwork with modern amenities,
+					this home exudes both comfort and style. Large windows allow ample
+					natural light to fill the space, creating a bright and airy
+					atmosphere.
 				</p>
 				<button
 					class="flex items-center gap-2 px-4 py-2 text-xl font-bold text-black rounded-full bg-ri-light-green"
@@ -160,7 +162,84 @@
 				</button>
 			</section>
 		</header>
-		<main></main>
+		<main>
+			<div class="bg-ri-grey">
+				<!-- ------------------------------- about -------------------------------- -->
+				<section
+					class="relative w-11/12 py-16 mx-auto mt-8 lg:mt-12 max-w-screen-2xl"
+				>
+					<picture
+						class="absolute hidden h-24 top-5 -left-5 lg:-left-10 lg:block"
+					>
+						<img
+							src="./assets/Vector.png"
+							alt="Vector"
+						/>
+					</picture>
+					<article
+						class="flex flex-col gap-6 lg:flex-row lg:justify-between lg:items-center"
+					>
+						<!-- content -->
+						<div class="lg:flex-1">
+							<button class="px-4 py-2 mb-4 bg-white rounded-full lg:mb-6">
+								<i class="fa-solid fa-arrow-right"></i>
+								About Us
+							</button>
+							<h2 class="mb-4 text-2xl font-bold lg:text-4xl lg:mb-6">
+								We design thoughtful, liveable spaces
+							</h2>
+							<p
+								class="mb-4 text-sm font-medium lg:text-base test-ri-grey-5 lg:mb-6"
+							>
+								At the heart of our mission is a commitment to creating spaces
+								that are both beautifully designed and deeply livable.
+							</p>
+							<article
+								class="flex items-center gap-6 p-6 mb-4 bg-white rounded-lg lg:mb-6"
+							>
+								<img
+									src="./assets/commercial.png"
+									alt="commercial"
+								/>
+								<div>
+									<h3 class="text-lg font-extrabold lg:text-xl mb-2.5">
+										Commercial
+									</h3>
+									<p class="text-base font-medium text-gray-500">
+										Our commercial properties are crafted to elevate business
+										environments.
+									</p>
+								</div>
+							</article>
+							<article
+								class="flex items-center gap-6 p-6 mb-4 bg-white rounded-lg lg:mb-6"
+							>
+								<img
+									src="./assets/residential.png"
+									alt="commercial"
+								/>
+								<div>
+									<h3 class="text-lg font-extrabold lg:text-xl mb-2.5">
+										Residential
+									</h3>
+									<p class="text-base font-medium text-gray-500">
+										Our residential properties are designed with comfort, style.
+									</p>
+								</div>
+							</article>
+						</div>
+						<!-- image -->
+						<div class="lg:flex-1">
+							<img
+								src="./assets/Rectangle.png"
+								alt=""
+								class=""
+							/>
+						</div>
+					</article>
+				</section>
+			</div>
+		</main>
 		<footer></footer>
 	</body>
 </html>
