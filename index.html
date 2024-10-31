@@ -45,17 +45,20 @@
 							"ri-grey-5": "#494949",
 							"ri-grey-dark": "#494949",
 						},
+						backgroundImage: {
+							"lets-discuss": "url('./assets/bg.jpg')",
+						},
 					},
 				},
 			};
 		</script>
 	</head>
 	<body>
-		<!-- w-11/12 max-w-screen-2xl -> (1280 / 12) -> (106.66 * 11) -> 1173.33 -->
+		<!-- w-11/12 max-w-screen-xl -> (1280 / 12) -> (106.66 * 11) -> 1173.33 -->
 		<!--:           max content width : 1173px           -->
 		<header class="pt-10 bg-gradient-to-b from-base-300 to-base-100">
 			<!-- ------------------------------- navbar -------------------------------- -->
-			<nav class="w-11/12 mx-auto max-w-screen-2xl">
+			<nav class="w-11/12 max-w-screen-xl mx-auto">
 				<div class="justify-between navbar">
 					<div class="justify-between w-full lg:w-auto navbar-start">
 						<a class="text-3xl btn btn-ghost">
@@ -119,7 +122,7 @@
 								></i>
 							</button>
 							<a class="font-bold border-none rounded-full btn bg-ri-primary">
-								Block Consult
+								Book Consult
 								<span
 									><i
 										class="flex items-center justify-center w-8 h-8 text-lg text-white -rotate-45 bg-black rounded-full fa-solid fa-arrow-right"
@@ -133,7 +136,7 @@
 
 			<!-- ------------------------------- banner -------------------------------- -->
 			<section
-				class="flex flex-col items-center justify-center w-11/12 py-8 mx-auto text-center lg:py-12 max-w-screen-2xl"
+				class="flex flex-col items-center justify-center w-11/12 max-w-screen-xl py-8 mx-auto text-center lg:py-12"
 			>
 				<picture>
 					<img
@@ -142,11 +145,11 @@
 					/>
 				</picture>
 				<h1
-					class="max-w-3xl mx-auto my-6 text-3xl font-extrabold lg:text-6xl lg:my-8"
+					class="max-w-2xl mx-auto my-6 text-3xl font-extrabold lg:text-6xl lg:my-8"
 				>
 					A barn house of this design has a striking appearance
 				</h1>
-				<p class="max-w-3xl mx-auto my-6 text-ri-grey-4">
+				<p class="max-w-2xl mx-auto my-6 text-ri-grey-4">
 					Combining the warmth of traditional woodwork with modern amenities,
 					this home exudes both comfort and style. Large windows allow ample
 					natural light to fill the space, creating a bright and airy
@@ -164,9 +167,9 @@
 		</header>
 		<main>
 			<div class="bg-ri-grey">
-				<!-- ------------------------------- about -------------------------------- -->
+				<!-- ------------------------------- about us -------------------------------- -->
 				<section
-					class="relative w-11/12 py-16 mx-auto mt-8 lg:mt-12 max-w-screen-2xl"
+					class="relative w-11/12 max-w-screen-xl py-16 mx-auto mt-8 lg:mt-12"
 				>
 					<picture
 						class="absolute hidden h-24 top-5 -left-5 lg:-left-10 lg:block"
@@ -229,7 +232,7 @@
 							</article>
 						</div>
 						<!-- image -->
-						<div class="lg:flex-1">
+						<div class="flex justify-center lg:justify-end lg:flex-1">
 							<img
 								src="./assets/Rectangle.png"
 								alt=""
@@ -241,10 +244,10 @@
 
 				<!-- -------------------------- Our Work section --------------------------- -->
 				<section
-					class="w-11/12 pb-12 mx-auto mt-8 lg:mt-12 max-w-screen-2xl lg:pb-24"
+					class="w-11/12 max-w-screen-xl pb-12 mx-auto mt-8 lg:mt-12 lg:pb-24"
 				>
-					<!-- title section -->
-					<div class="max-w-3xl mx-auto text-center">
+					<!--: title, description div -->
+					<div class="max-w-2xl mx-auto text-center">
 						<button class="px-4 py-2 mb-4 bg-white rounded-full lg:mb-6">
 							<i class="fa-solid fa-arrow-right"></i>
 							How we works
@@ -305,6 +308,79 @@
 								aesthetics and functionality.
 							</p>
 						</article>
+					</div>
+				</section>
+			</div>
+
+			<!-- ------------------------ Let's discuss section ------------------------ -->
+			<div class="py-1 bg-lets-discuss">
+				<section class="w-11/12 max-w-screen-xl mx-auto my-12 lg:my-24">
+					<!--: title, description div -->
+					<div class="max-w-2xl mx-auto text-center">
+						<button class="px-4 py-2 mb-4 rounded-full bg-[#eefbdf] lg:mb-6">
+							<i class="fa-solid fa-arrow-right"></i>
+							Let's Connect
+						</button>
+						<h2 class="mb-4 text-2xl font-bold lg:text-4xl lg:mb-6">
+							Let's Discuss Next Project
+						</h2>
+						<p
+							class="mb-4 text-sm font-medium lg:text-base test-ri-grey-5 lg:mb-6"
+						>
+							Ready to bring your vision to life? Let’s collaborate to create a
+							space that’s uniquely yours. Whether you’re looking to design a
+							cozy home, a vibrant commercial space, or a versatile property,
+						</p>
+					</div>
+					<!-- --------------------------- form container ---------------------------- -->
+
+					<div class="grid grid-cols-1 gap-6 lg:px-[8rem] lg:grid-cols-2">
+						<input
+							type="text"
+							name=""
+							id=""
+							class="w-full rounded-full input input-bordered"
+							placeholder="First Name*"
+						/>
+						<input
+							type="text"
+							name=""
+							id=""
+							class="w-full rounded-full input input-bordered"
+							placeholder="Last Name*"
+						/>
+						<input
+							type="number"
+							name=""
+							id=""
+							class="w-full rounded-full input input-bordered"
+							placeholder="Phone Number*"
+						/>
+						<input
+							type="email"
+							name=""
+							id=""
+							class="w-full rounded-full input input-bordered"
+							placeholder="Email*"
+						/>
+						<input
+							type="text"
+							name=""
+							id=""
+							class="w-full lg:col-span-2 rounded-2xl input input-bordered h-[8rem]"
+							placeholder="Enter your message here*"
+						/>
+
+						<a
+							class="font-bold border-none rounded-full lg:col-span-2 btn bg-ri-primary"
+						>
+							Book Consult
+							<span
+								><i
+									class="flex items-center justify-center w-8 h-8 text-lg text-white -rotate-45 bg-black rounded-full fa-solid fa-arrow-right"
+								></i
+							></span>
+						</a>
 					</div>
 				</section>
 			</div>
