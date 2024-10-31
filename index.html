@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html
-	data-theme="dark"
+	data-theme="light"
 	lang="en"
 >
 	<head>
@@ -10,22 +10,130 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<title>Rinterio</title>
+		<!-- ------------------------------- favicon ------------------------------- -->
 		<link
 			rel="shortcut icon"
-			href="./assets/rinterio.ico"
+			href="./assets/favicon.ico"
 			type="image/x-icon"
 		/>
-		<!-- --------------------------- tailwind cdn ---------------------------- -->
-		<script src="https://cdn.tailwindcss.com"></script>
-		<!-- ----------------------------- daisyUI cdn ----------------------------- -->
+		<!-- -------------------------- font awesome cdn --------------------------- -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- ---------------------- tailwind and daisyUI cdn ----------------------- -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
 			rel="stylesheet"
 			type="text/css"
 		/>
 		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- --------------------------- custom tailwind --------------------------- -->
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							clifford: "#da373d",
+							"ri-primary": "#abef5f",
+							"ri-light-green": "#d4f6ae",
+							"ri-grey": "#f4f4f4",
+							"ri-grey-4": "#737373",
+							"ri-grey-dark": "#494949",
+						},
+					},
+				},
+			};
+		</script>
 	</head>
 	<body>
-		<h1>Rinterio</h1>
+		<!-- w-11/12 max-w-screen-2xl -> (1280 / 12) -> (106.66 * 11) -> 1173.33 -->
+		<!--:           max content width : 1173px           -->
+		<header class="pt-10 bg-gradient-to-b from-base-300 to-base-100">
+			<!-- ------------------------------- navbar -------------------------------- -->
+			<nav class="w-11/12 mx-auto max-w-screen-2xl">
+				<div class="justify-between navbar">
+					<div class="justify-between w-full lg:w-auto navbar-start">
+						<a class="text-3xl btn btn-ghost">
+							<i
+								class="flex items-center justify-center w-8 h-8 p-2 text-xl -rotate-45 rounded-full fa-solid fa-arrow-right bg-ri-primary"
+							>
+							</i>
+							<span class="font-extrabold">Rinterio</span>
+						</a>
+						<div class="bg-white border rounded-full dropdown">
+							<div
+								tabindex="0"
+								role="button"
+								class="btn btn-ghost lg:hidden"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="w-5 h-5"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M4 6h16M4 12h8m-8 6h16"
+									/>
+								</svg>
+							</div>
+							<ul
+								tabindex="0"
+								class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0"
+							>
+								<li><a class="flex justify-center">Item 1</a></li>
+								<li><a class="flex justify-center">Item 3</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="hidden navbar-center lg:flex">
+						<ul class="px-1 menu menu-horizontal">
+							<li class="font-bold"><a>Home</a></li>
+							<li class="text-ri-grey-4">
+								<a>Services</a>
+							</li>
+							<li class="text-ri-grey-4"><a>Portfolio</a></li>
+							<li class="text-ri-grey-4"><a>Blogs</a></li>
+							<li class="text-ri-grey-4"><a>Contact Us</a></li>
+						</ul>
+					</div>
+					<div class="hidden w-auto navbar-end lg:flex">
+						<div class="flex items-center gap-2">
+							<button>
+								<i
+									class="p-2 bg-white border rounded-full fa-solid fa-magnifying-glass text-ri-grey-4"
+								></i>
+							</button>
+							<button>
+								<i
+									class="p-2 bg-white border rounded-full fa-solid fa-shopping-cart text-ri-grey-4"
+								></i>
+							</button>
+							<a class="font-bold border-none rounded-full btn bg-ri-primary">
+								Block Consult
+								<span
+									><i
+										class="flex items-center justify-center w-8 h-8 text-lg text-white -rotate-45 bg-black rounded-full fa-solid fa-arrow-right"
+									></i
+								></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<!-- ------------------------------- banner -------------------------------- -->
+			<section class="w-11/12 mx-auto max-w-screen-2xl"></section>
+		</header>
+		<main></main>
+		<footer></footer>
 	</body>
 </html>
